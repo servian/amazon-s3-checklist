@@ -25,7 +25,7 @@ All items in the **Amazon S3 Checklist** are required for the majority of the pr
 
 - :o: means that the item is **recommended** but can be omitted in some particular situations.
 - :interrobang: means that the item is **highly recommended** and can eventually be omitted in some really particular cases.
-- :bangbang: means that the item **can't be omitted** by any reason.
+- :heavy_exclamation_mark: means that the item **can't be omitted** by any reason.
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 
@@ -37,7 +37,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Management
 
-- [ ] :bangbang: **Bucket Policy vs IAM Policy vs ACL:** Setting up the right access controls for your S3 buckets and objects.
+- [ ] :heavy_exclamation_mark: **Bucket Policy vs IAM Policy vs ACL:** Setting up the right access controls for your S3 buckets and objects.
 
   - :book: [IAM Policies and Bucket Policies and ACLs! Oh, My! (Controlling Access to S3 Resources)](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/)
 
@@ -59,7 +59,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Availability
 
-- [ ] :bangbang: **Backup plan:** 11 9s of durability is not bulletproof. Consider cross-region replication or multi-cloud backups.
+- [ ] :heavy_exclamation_mark: **Backup plan:** 11 9s of durability is not bulletproof. Consider cross-region replication or multi-cloud backups.
 
   - :book: [Replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html)
 
@@ -73,15 +73,15 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Monitoring
 
-- [ ] :bangbang: **Monitoring plan:** What metrics are recorded? Who is notified? How often are metrics monitored?
+- [ ] :heavy_exclamation_mark: **Monitoring plan:** What metrics are recorded? Who is notified? How often are metrics monitored?
 
   - :book: [Monitoring Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/monitoring-overview.html)
 
-- [ ] :bangbang: **CloudTrail:** CloudTrail logs cover general interactions with the S3 service.
+- [ ] :heavy_exclamation_mark: **CloudTrail:** CloudTrail logs cover general interactions with the S3 service.
 
   - :book: [Logging with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html)
 
-- [ ] :bangbang: **Server access logging:** Server access logging provides detailed records for the requests that are made to a bucket.
+- [ ] :heavy_exclamation_mark: **Server access logging:** Server access logging provides detailed records for the requests that are made to a bucket.
 
   - :book: [Logging with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html)
   - :book: [Amazon S3 server access logging](https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html)
@@ -92,17 +92,17 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Security
 
-- [ ] :bangbang: **Block all public access:** Low complexity mechanism to prevent public data breaches.
+- [ ] :heavy_exclamation_mark: **Block all public access:** Low complexity mechanism to prevent public data breaches.
 
   - :book: [Using Amazon S3 block public access](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html)
 
-- [ ] :bangbang: **Encryption:** Enabling SSE-S3 default encryption is free. SSE-KMS and SSE-C can be further used for extra levels of security and flexibility.
+- [ ] :heavy_exclamation_mark: **Encryption:** Enabling SSE-S3 default encryption is free. SSE-KMS and SSE-C can be further used for extra levels of security and flexibility.
 
   - :book: [Protecting data using encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html)
   - :book: [How do I enable default encryption for an Amazon S3 bucket?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/default-bucket-encryption.html)
   - :book: [How Amazon Simple Storage Service (Amazon S3) uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-s3.html)
 
-- [ ] :bangbang: **SSL requests only:** Enforce the use of SSL for all S3 API requests.
+- [ ] :heavy_exclamation_mark: **SSL requests only:** Enforce the use of SSL for all S3 API requests.
 
   - :book: [s3-bucket-ssl-requests-only](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html)
 
@@ -151,7 +151,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Cost
 
-- [ ] :bangbang: **Intelligent-Tiering:** Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier.
+- [ ] :heavy_exclamation_mark: **Intelligent-Tiering:** Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier.
 
   - :book: [Amazon S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
 

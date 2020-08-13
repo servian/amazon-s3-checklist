@@ -151,6 +151,14 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Cost
 
+- [ ] :bangbang: **Intelligent-Tiering:** Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier.
+
+  - :book: [Amazon S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
+
+- [ ] :o: **Inventory:** Outputs files that list your objects and their corresponding metadata on a daily or weekly basis. Can be useful to setup your own lifecycle management or for big data jobs that require S3 object metadata without having to call individual object APIs.
+
+  - :book: [Amazon S3 inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---

@@ -55,17 +55,72 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Availability
 
+- [ ] :bangbang: **Backup plan:** 11 9s of durability is not bulletproof. Consider cross-region replication or multi-cloud backups.
+
+  - :book: [Replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html)
+
+- [ ] :interrobang: **Object versioning:** Object versioning, in conjunction with lifecycle management enhances application resilience.
+
+  - :book: [Object Versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---
 
 ## Monitoring
 
+- [ ] :bangbang: **Monitoring plan:** What metrics are recorded? Who is notified? How often are metrics monitored?
+
+  - :book: [Monitoring Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/monitoring-overview.html)
+
+- [ ] :bangbang: **CloudTrail:** CloudTrail logs cover general interactions with the S3 service.
+
+  - :book: [Logging with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html)
+
+- [ ] :bangbang: **Server access logging:** Server access logging provides detailed records for the requests that are made to a bucket.
+
+  - :book: [Logging with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html)
+  - :book: [Amazon S3 server access logging](https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---
 
 ## Security
+
+- [ ] :bangbang: **Block all public access:** Low complexity mechanism to prevent public data breaches.
+
+  - :book: [Using Amazon S3 block public access](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html)
+
+- [ ] :bangbang: **Encryption:** Enabling SSE-S3 default encryption is free. SSE-KMS and SSE-C can be further used for extra levels of security and flexibility.
+
+  - :book: [Protecting data using encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html)
+  - :book: [How do I enable default encryption for an Amazon S3 bucket?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/default-bucket-encryption.html)
+  - :book: [How Amazon Simple Storage Service (Amazon S3) uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-s3.html)
+
+- [ ] :bangbang: **SSL requests only:** Enforce the use of SSL for all S3 API requests.
+
+  - :book: [s3-bucket-ssl-requests-only](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html)
+
+- [ ] :interrobang: **MFA delete:** Adds another layer of security requiring additional authentication.
+
+  - :book: [MFA delete](https://docs.amazonaws.cn/en_us/AmazonS3/latest/dev/Versioning.html#MultiFactorAuthenticationDelete)
+
+- [ ] :interrobang: **VPC endpoints:** Where traffic being routed over the Internet is undesirable, VPC Endpoints should be used to access S3.
+
+  - :book: [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html)
+
+- [ ] :interrobang: **:new: Amazon GuardDuty:** Detect suspicious activities such as requests coming from an unusual geo-location, disabling of preventative controls such as S3 block public access, or API call patterns consistent with an attempt to discover misconfigured bucket permissions.
+
+  - :book: [Using Amazon GuardDuty to Protect Your S3 Buckets](https://aws.amazon.com/blogs/aws/new-using-amazon-guardduty-to-protect-your-s3-buckets/)
+
+- [ ] :o: **Glacier Vault Lock:** Immutable policy for enforcing controls such as "write once read many" (WORM).
+
+  - :book: [Amazon S3 Glacier Vault Lock](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html)
+
+- [ ] :o: **Amazon Macie:** Macie automates the discovery of sensitive data, such as personally identifiable information (PII) and intellectual property, to provide you with a better understanding of the data that your organization stores in Amazon S3.
+
+  - :book: [What is Amazon Macie?](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html)
 
 [:arrow_up: back to top](#table-of-contents)
 

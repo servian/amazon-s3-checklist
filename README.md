@@ -21,7 +21,7 @@ The Amazon S3 Checklist is an exhaustive list of all elements you need to have /
 
 ## How to use
 
-All items in the **Amazon Redshift Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:
+All items in the **Amazon S3 Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:
 
 - :o: means that the item is **recommended** but can be omitted in some particular situations.
 - :interrobang: means that the item is **highly recommended** and can eventually be omitted in some really particular cases.
@@ -40,6 +40,10 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :bangbang: **Bucket Policy vs IAM Policy vs ACL:** Setting up the right access controls for your S3 buckets and objects.
 
   - :book: [IAM Policies and Bucket Policies and ACLs! Oh, My! (Controlling Access to S3 Resources)](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/)
+
+- [ ] :interrobang: **Access Points:** Simplifies managing data access at scale for applications using shared data sets on S3.
+
+  - :book: [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
 
 - [ ] :interrobang: **Lifecycle policy:** Implement lifecycle needs according to frequency, durability, and latency requirements.
 
@@ -127,6 +131,19 @@ Some resources possess an emoticon to help you understand which type of content 
 ---
 
 ## Performance
+
+- [ ] :interrobang: **Partitioning strategy:** Consider storing your data in a fit-for-purpose directory structure for better read and write performance.
+
+  - :book: [Best Practices Design Patterns: Optimizing Amazon S3 Performance](https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html)
+  - :book: [Amazon S3 Performance Tips & Tricks](https://aws.amazon.com/blogs/aws/amazon-s3-performance-tips-tricks-seattle-hiring-event/)
+
+- [ ] :o: **S3 Select:** Enables applications to retrieve only a subset of data from an object by using simple SQL expressions.
+
+  - :book: [Selecting content from objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/selecting-content-from-objects.html)
+
+- [ ] :o: **Glacier Select:** Allows you to to perform filtering directly against a Glacier object using standard SQL statements.
+
+  - :book: [Amazon S3 Glacier features](https://aws.amazon.com/glacier/features/#amazon-glacier-select)
 
 [:arrow_up: back to top](#table-of-contents)
 

@@ -45,7 +45,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
 
-- [ ] :yellow_circle: **Enable a lifecycle policy:** Implement lifecycle needs according to frequency, durability, and latency requirements.
+- [ ] :yellow_circle: **Create object lifecycle policies:** Implement data lifecycle needs according to frequency, durability, and latency requirements. Object lifecycle policies will move data between the various storage classes, including Glacier and even the deletion of objects.
 
   - :book: [Object lifecycle management](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html)
 
@@ -111,7 +111,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [MFA delete](https://docs.amazonaws.cn/en_us/AmazonS3/latest/dev/Versioning.html#MultiFactorAuthenticationDelete)
 
-- [ ] :yellow_circle: **Use VPC endpoints:** Where traffic being routed over the Internet is undesirable, VPC Endpoints should be used to access S3.
+- [ ] :yellow_circle: **Use VPC endpoints:** Where traffic being routed over the Internet is undesirable, VPC endpoints should be used to access S3.
 
   - :book: [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html)
 

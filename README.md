@@ -25,7 +25,7 @@ All items in the **Amazon S3 Checklist** are required for the majority of the pr
 
 - :green_circle: means that the item is **recommended** but can be omitted in some particular situations.
 - :yellow_circle: means that the item is **highly recommended** and can eventually be omitted in some really particular cases.
-- :red_circle: means that the item **can't be omitted** by any reason.
+- :red_circle: means that the item **can't be omitted** for any reason.
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 
